@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lockers. | Your Locker</title>
+    <link rel="icon" href="img/hand_01.png" type="image/x-icon" />
+    <link rel="stylesheet" href="lockers.css" />
+    
+  </head>
+  <body>
+    <!-- <div class="wrapper">
+        <div class="scan">
+            <div class="hand">
+                <div class="lines">
+
+                </div>
+            </div>
+            <h3>Scanning...</h3>
+        </div>
+    </div> -->
+    <!-- Preloader ends -->
+    <div class="container">
+        <div class="drop">
+          <div class="content">
+            <h2>Open Your Locker</h2>
+            <form class="validate" id="lockersForm">
+              <div class="inputBox">
+                <input type="text" placeholder="Cipher Text" id="cipherText" readonly />
+              </div>
+              <div class="inputBox">
+                <input type="text" placeholder="Secret Key" id="secretKey" autocomplete="off" />
+              </div>
+              <div class="inputBox">
+                <input type="text" placeholder="Decrypted Message" id="decryptedMessage" readonly />
+              </div>
+              <div class="inputBox">
+                <input type="submit" value="Decrypt" name="decrypt" id="decryptButton" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>      
+
+    <script src="bundle.js"></script>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+        // Show loader wrapper
+        $("nav").hide();
+        $(".wrapper").show();
+
+        // Hide navbar and disable scrolling
+        $("body").css("overflow", "hidden");
+
+        // After 2 seconds, hide loader wrapper and fade in the container
+        setTimeout(function () {
+            $(".wrapper").fadeOut(500, function () {
+                $("nav").fadeIn(500);
+                $(".container").addClass("fade-in");
+                $("body").css("overflow", "visible");
+            });
+        }, 2500);
+    });
+    </script>
+
+    <script>
+      let images = ["🤡", "🔏", "🔓", "🔑", "🔐", "🔒", "🗝", "🛅", "👾", "🔐", "🔑"];
+      document.addEventListener("mousemove", function (e) {
+        let body = document.querySelector("body");
+        let emoji = document.createElement("span");
+        let x = e.offsetX;
+        let y = e.offsetY;
+
+        emoji.style.left = x + "px";
+        emoji.style.top = y + "px";
+
+        let icon = images[Math.floor(Math.random() * images.length)];
+        emoji.innerText = icon;
+
+        let size = Math.random() * 20;
+        emoji.style.fontSize = 5 + size + "px";
+
+        // get random value for transform
+        let max = 0;
+        let min = 100;
+        let randomValue = Math.floor(Math.random());
+        emoji.style.transform = "translateX(" + randomValue + "px";
+
+        body.appendChild(emoji);
+
+        setTimeout(function () {
+          emoji.remove();
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

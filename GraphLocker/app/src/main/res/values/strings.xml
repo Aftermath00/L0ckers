@@ -1,0 +1,24 @@
+<resources>
+	<string name="app_name">Vault</string>
+	<string name="vault">Vault</string>
+	<string name="hello">Hello!</string>
+	<string name="Welcome">Welcome to Vault!</string>
+	<string name="made_with_by_azmi">Made with ❤ by Azmii</string>
+	<string name="decrypt">DECRYPT</string>
+	<string name="encrypt">ENCRYPT</string>
+	<string name="make_a_locker">Make A Locker</string>
+	<string name="enter_your_text_here">Enter your text here…</string>
+	<string name="enter_your_cipher">Enter your ciphertext here…</string>
+	<string name="copy_text">Copy Text</string>
+	<string name="your_encrypted_text">Your encrypted text:</string>
+	<string name="your_decrypted_text">Your decrypted text:</string>
+	<string name="text_image">Text Image</string>
+	<string name="encrypt_image_text">Encrypt Image Text</string>
+	<string name="front_image">Front Image</string>
+	<string name="generate_otp">Generate OTP</string>
+	<string name="create_locker">Create Locker</string>
+	<string name="locker_maker">Locker Maker</string>
+	<string name="enter_key_here">Enter key here</string>
+	<string name="mainimage">mainImage</string>
+	<string name="otp">OTP</string>
+</resources>

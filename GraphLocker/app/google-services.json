@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "213447359028",
+    "project_id": "cryptoproject-6eeed",
+    "storage_bucket": "cryptoproject-6eeed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213447359028:android:7a87426fe88c21858d6861",
+        "android_client_info": {
+          "package_name": "com.example.graphlocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213447359028-rnqeaeti63eo54gerr841jbt4c1i9hku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.graphlocker",
+            "certificate_hash": "95bd1a9917f9e8339a169abf8ff83e3b48645600"
+          }
+        },
+        {
+          "client_id": "213447359028-vcm2uu083k78pg2vlqauv3frspdhlke5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ0sSFvN-0nkVs8S6WGh3ILb-ZKsryyJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213447359028-vcm2uu083k78pg2vlqauv3frspdhlke5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
